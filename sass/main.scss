@@ -1,3 +1,20 @@
+//main file only import files
+@import '/sass/absctract/functions';
+@import '/sass/absctract/variables';
+@import '/sass/absctract/mixins';
+
+
+@import 'base/animations';
+@import 'base/typographys';
+@import 'base/utilities';
+@import 'base/base';
+
+
+@import   'pages/home';
+
+
+
+
 /*
 COLORS:
 
