@@ -1,0 +1,21 @@
+.row {
+  max-width: 114rem;
+  background-color: $color-white;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: $vertical-spacing;
+  }
+
+  @include clearfix;
+  [class^="col-"] {
+    float: left;
+    &:not(:last-child) {
+      margin-right: $horizontal-spacing;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$horizontal-spacing}) / 2);
+  }
+  
+}
